@@ -1,0 +1,81 @@
+mg	mongo
+mng	mongosh || mongo↵
+mnd	mongodump
+mnr	mongorestore
+fnd	find({})←←
+udt	update({}, {})←←←←←←
+
+fmy	mysql↵
+sew	select * from where =''←←←←←←←←←←
+use	use
+fug	use admin↵
+fuk	use asterisk↵~
+trk	asterisk
+brn	brownie
+gsk	psk
+stl	setl
+lgn	legenda
+grk	marker
+tms	times
+hma	HLM
+blv	ble
+ktn	Kaiten
+cts	context
+xtn	extensions
+
+yre	systemctl restart
+yst	systemctl status
+yrt	systemctl start
+yto	systemctl stop
+bxc	brownie.exec
+dxc	admin.exec
+hxc	push.exec
+ftc	fail2ban-client
+ftb	fail2ban
+tkv	asterisk -rvvvvvvvv↵~
+
+jcf	journalctl -u -f←←←
+jcn	journalctl -u  --since "1 hour ago"←←←←←←←←←←←←←←←←←←←←←
+mns	minutes
+hrs	hours
+das	days
+
+rut	sudo -i↵
+geb	 | grep
+wfg	 > test.log
+u7	&&
+y6	||
+i8	|
+eho	echo
+hst	history↵
+clh	clear↵
+eit	exit↵
+
+vgy	/var/log/syslog
+vgk	/var/log/asterisk/emerg
+etk	/etc/asterisk/extensions.conf
+tbr	/opt/brownie/config.jso n
+ftk	/etc/fail2ban/jail.d/asterisk.local /etc/fail2ban/jail.conf
+mdr	mkdir
+rdi	rm -r
+cmx	chmod 666
+tlf	tail -f
+vn,	nano
+
+gxm	~
+ghm	/home/
+zdf	dafed
+knv	alkor
+trd	setlprod
+zhn	nns
+zhd	delsol
+
+shg	ssh
+
+-[]	- [ ]
+;'	''←
+l;'	""←
+90	()←
+[]	[]←
+p[]	{}←
+myt	monkeytype.com

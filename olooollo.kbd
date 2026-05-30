@@ -1,0 +1,218 @@
+(defcfg
+  process-unmapped-keys yes
+  concurrent-tap-hold yes
+  chords-v2-min-idle 20
+)
+
+(defsrc
+       q w e r
+  caps a s d f 
+              spc
+)
+
+(defvirtualkeys
+  arShift lsft
+  
+  vknav (switch 
+    ((layer artsey_base))  (layer-while-held artsey_nav) break 
+    ((layer artsey_nav)) (layer-while-held artsey_base)  break
+  )
+  vkmou (switch 
+    ((layer artsey_base)) (layer-while-held artsey_mou) break 
+    ((layer artsey_mou)) (layer-while-held artsey_base) break
+  )
+
+  fAnd7 (switch 
+    ((layer artsey_num)) 7 break 
+    ((layer artsey_base)) f break
+  )
+  gAnd8 (switch 
+    ((layer artsey_num)) 8 break 
+    ((layer artsey_base)) g break
+  )
+  cAnd9 (switch 
+    ((layer artsey_num)) 9 break 
+    ((layer artsey_base)) c break
+  )
+  uAnd0 (switch 
+    ((layer artsey_num)) 0 break 
+    ((layer artsey_base)) u break
+  )
+)
+
+(defalias
+  ;; Layer entry from normal QWERTY.
+  spcBase (tap-hold 100 200
+    spc
+    (multi
+      (layer-while-held artsey_base)
+      (on-release release-vkey arShift)
+      (on-release release-vkey vknav)
+      (on-release release-vkey vkmou)
+    )
+  )
+
+  osNum (layer-while-held artsey_num)
+  osSym (layer-while-held artsey_sym)
+  osPar (layer-while-held artsey_par)
+  osNav (on-press press-virtualkey vknav)
+  osNavOff (on-press release-virtualkey vknav)
+  osMou (on-press press-virtualkey vkmou)
+  osMouOff (on-press release-virtualkey vkmou)
+  osCus (layer-while-held artsey_custom)
+  
+  osCtl (one-shot-release-pcancel 5000 lctl)
+  osGui (one-shot-release-pcancel 5000 lmet)
+  osAlt (one-shot-release-pcancel 5000 lalt)
+  osRSft (one-shot-release-pcancel 5000 rsft)
+  togShift (on-press toggle-vkey arShift)
+
+  arS (tap-hold 100 200 s @osNum)
+  arT t
+  arR r
+  arA (tap-hold 100 200 a @osPar)
+  arO (tap-hold 100 200 o @osCus)
+  arI i
+  arY y
+  arE (tap-hold 100 200 e @osSym)
+
+  ar1 1
+  ar2 2
+  ar3 3
+  ar4 4
+  ar5 5
+  ar6 6
+
+  mUp    (movemouse-accel-up 1 1000 1 12)
+  mDown  (movemouse-accel-down 1 1000 1 12)
+  mLeft  (movemouse-accel-left 1 1000 1 12)
+  mRight (movemouse-accel-right 1 1000 1 12)
+  whUp   (mwheel-up 50 120)
+  whDown (mwheel-down 50 120)
+)
+
+(deflayer base
+       q w e r
+  lrld a s d f
+              @spcBase
+)
+
+(deflayer artsey_base
+  @arS @arT @arR @arA
+_ @arO @arI @arY @arE
+                 _
+)
+
+(deflayer artsey_num
+  @arS @ar3 @ar2 @ar1
+_ XX  @ar6 @ar5 @ar4
+                 _
+)
+
+(deflayer artsey_sym
+  `    ;    \    S-1
+_ =    -    S-/  @arE
+                 _
+)
+
+(deflayer artsey_par
+  S-[  S-9  S-0  @arA
+_ S-]  [    ]    @arE
+                 _
+)
+
+(deflayer artsey_nav
+  pgup home up   end
+_ pgdn left down rght
+                 _
+)
+
+(deflayer artsey_mou
+  @whUp  mrgt  @mUp   mlft
+_ @whDown @mLeft @mDown @mRight
+                 _
+)
+
+(deflayer artsey_custom
+  XX  volu ins  mute
+_ XX  vold XX @osRSft
+                 _
+)
+
+(defchordsv2
+  (e s f)     @osNav    70 first-release (artsey_num artsey_sym artsey_par artsey_mou artsey_custom)
+  (w r d)     @osMou    70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_custom)
+
+  ;; Global controls.
+  (q w e f)   @togShift 70 first-release (base)
+  (r f)       ret       70 first-release (base)
+  (a s d f)   spc       70 first-release (base)
+  (w e r a)   tab       70 first-release (base)
+  (e f)       bspc      70 first-release (base)
+  (e s)       del       70 first-release (base)
+  (e r a)     esc       70 first-release (base)
+  (q f)       @osCtl    70 first-release (base)
+  (q d)       @osGui    70 first-release (base)
+  (q s)       @osAlt    70 first-release (base)
+  (r a s d)   caps      70 first-release (base artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom)
+
+  ;; Base letters and punctuation.
+  (a f)       b         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom)
+  (d f)       (multi (on-press press-vkey cAnd9) (on-release release-vkey cAnd9))         70 first-release (artsey_sym artsey_par artsey_nav artsey_mou artsey_custom)
+  (w e r)     d         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom)
+  (e r)       (multi (on-press press-vkey fAnd7) (on-release release-vkey fAnd7))         70 first-release (artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (w e)       (multi (on-press press-vkey gAnd8) (on-release release-vkey gAnd8))         70 first-release (artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (a d)       h         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q w)       j         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (s f)       k         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (s d)       (multi (on-press press-vkey uAnd0) (on-release release-vkey uAnd0))         70 first-release (artsey_sym artsey_par artsey_nav artsey_mou artsey_custom)
+  (s d f)     l         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (a s d)     m         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (a s)       n         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (a s f)     p         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q w r)     q         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q e)       v         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q r)       w         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q w e)     x         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (q w e r)   z         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (r s d)     '         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (r d)       .         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (r s)       ,         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (w s)       S-1       70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+  (r a)       /         70 first-release (artsey_num artsey_sym artsey_par artsey_nav artsey_mou artsey_custom )
+
+  ;; Number-layer chorded digits.
+  ;; (s d) 0 is in uAnd0
+  ;; (e r) 7 is in fAnd7
+  ;; (w e) 8 is in gAnd8
+  ;; (d f) 9 is in cAnd9
+)
+
+
+(defzippy
+  terminal-chords ;; required
+  on-first-press-chord-deadline 200  ;; optional
+  idle-reactivate-time          100  ;; optional
+  smart-space                   full  ;; optional
+  smart-space-punctuation (' ; : / ] } ? ! . , )
+  output-character-mappings (    ;; optional
+    ↵ ret
+    ← lft
+    ~ S-`
+    ! S-1
+    ? S-/
+    % S-5
+    & S-7
+    * S-8
+    "(" S-9
+    ")" S-0
+    "{" S-[
+    "}" S-]
+    : S-;
+    < S-,
+    > S-.
+    r#"""# S-'
+    | S-\
+    _ S--
+    )
+)

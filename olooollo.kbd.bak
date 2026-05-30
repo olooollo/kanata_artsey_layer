@@ -1,0 +1,39 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc 
+  caps
+)
+
+(deflayer has-live-reload
+  lrld
+)
+
+(defzippy
+  terminal-chords ;; required
+  on-first-press-chord-deadline 200  ;; optional
+  idle-reactivate-time          100  ;; optional
+  smart-space                   full  ;; optional
+  smart-space-punctuation (' ; : / ] } ? ! . , )
+  output-character-mappings (    ;; optional
+    ↵ ret
+    ← lft
+    ~ S-`
+    ! S-1
+    ? S-/
+    % S-5
+    & S-7
+    * S-8
+    "(" S-9
+    ")" S-0
+    "{" S-[
+    "}" S-]
+    : S-;
+    < S-,
+    > S-.
+    r#"""# S-'
+    | S-\
+    _ S--
+    )
+)
