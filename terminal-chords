@@ -1,81 +1,89 @@
-mg	mongo
-mng	mongosh || mongo↵
-mnd	mongodump
-mnr	mongorestore
-fnd	find({})←←
-udt	update({}, {})←←←←←←
+dv	mongo 
+dvs	mongosh || mongo↵
+dvc	mongodump 
+dvr	mongorestore 
+vfa	.find({})←←
+vdt	.update({}, {})←←←←←←
 
-fmy	mysql↵
-sew	select * from where =''←←←←←←←←←←
-use	use
-fug	use admin↵
-fuk	use asterisk↵~
-trk	asterisk
-brn	brownie
-gsk	psk
-stl	setl
-lgn	legenda
-grk	marker
-tms	times
-hma	HLM
-blv	ble
-ktn	Kaiten
-cts	context
-xtn	extensions
+zsq	mysql↵
+zse	select * from where =''←←←←←←←←←←
+ze	use 
+zed	use admin↵
+zea	use asterisk↵
+ast	asterisk 
+brw	brownie 
+gsa	psk 
+gtw	setl 
+gea	legenda 
+ger	marker 
+tms	times 
+gad	HLM 
+wfe	ble 
+gat	Kaiten 
+ctx	context 
+xte	extensions 
 
-yre	systemctl restart
-yst	systemctl status
-yrt	systemctl start
-yto	systemctl stop
-bxc	brownie.exec
-dxc	admin.exec
-hxc	push.exec
-ftc	fail2ban-client
-ftb	fail2ban
-tkv	asterisk -rvvvvvvvv↵~
+str	systemctl restart 
+sta	systemctl status 
+stg	systemctl start 
+stq	systemctl stop 
+bwx	brownie.exec 
+adx	admin.exec 
+swx	push.exec 
+fbc	fail2ban-client 
+fba	fail2ban 
+asv	asterisk -rvvvvvvvv↵
 
-jcf	journalctl -u -f←←←
-jcn	journalctl -u  --since "1 hour ago"←←←←←←←←←←←←←←←←←←←←←
-mns	minutes
-hrs	hours
-das	days
+vgf	journalctl -u  -f←←←
+vgs	journalctl -u  --since "1 hour ago"←←←←←←←←←←←←←←←←←←←←←
+vts	minutes 
+vrs	hours 
+vds	days 
 
-rut	sudo -i↵
-geb	 | grep
-wfg	 > test.log
-u7	&&
-y6	||
-i8	|
-eho	echo
-hst	history↵
-clh	clear↵
-eit	exit↵
+qsd	sudo -i↵
+qfe	 | grep 
+qwr	 > test.log 
 
-vgy	/var/log/syslog
-vgk	/var/log/asterisk/emerg
-etk	/etc/asterisk/extensions.conf
-tbr	/opt/brownie/config.jso n
-ftk	/etc/fail2ban/jail.d/asterisk.local /etc/fail2ban/jail.conf
-mdr	mkdir
-rdi	rm -r
-cmx	chmod 666
-tlf	tail -f
-vn,	nano
+qec	echo
+qsr	history↵
+qce	clear↵
+qet	exit↵
 
-gxm	~
-ghm	/home/
-zdf	dafed
-knv	alkor
-trd	setlprod
-zhn	nns
-zhd	delsol
+zsr	/var/log/asterisk/emerg 
+zsx	/etc/asterisk/extensions.conf 
+zrw	/opt/brownie/config.json 
+zfb	/etc/fail2ban/jail.d/asterisk.local /etc/fail2ban/jail.conf 
+qcd	mkdir 
+qrm -r 
+qcx	chmod 666 
+qrf	tail -f 
+qed	nano 
 
-shg	ssh
+zgd	~
+zgf	/home/
+sdf	dafed@
+scv	alkor@
+std	setlprod@
+sav	nns@
+sde	delsol@
 
--[]	- [ ]
-;'	''←
-l;'	""←
-90	()←
-[]	[]←
-p[]	{}←
-myt	monkeytype.com
+sad	ssh 
+
+cgx	- [ ] 
+cqt	''←
+cqd	""←
+cra	()←
+cqr	[]←
+cwr	{}←
+tras	typeracerplay.typeracer.com
+
+
+
+qwed	admin↹OLadmin18↵
+qwev	fedorov↹1EsMrGshW4↵
+qwer	1q2w3e4r↵
+qwed	2313133↵
+qwet	29qBj3cEg#↵
+qwes	eu&W87r)5_Dspy↵
+qweg	qwsuD81hH8LI↵
+qwrg	94vcTb3Vm7Xwp↵
