@@ -1,0 +1,330 @@
+
+dv #flashcard/chords
+?
+mongo 
+
+sdv #flashcard/chords
+?
+mongosh || mongo↵
+
+cdv #flashcard/chords
+?
+mongodump 
+
+rdv #flashcard/chords
+?
+mongorestore 
+
+fav #flashcard/chords
+?
+.find({})←←
+
+dtv #flashcard/chords
+?
+.update({}, {})←←←←←←
+
+
+
+sq #flashcard/chords
+?
+mysql↵
+
+ #flashcard/chords
+?
+select * from where =''←←←←←←←←←←
+
+ze #flashcard/chords
+?
+use 
+
+zed #flashcard/chords
+?
+use admin↵
+
+zea #flashcard/chords
+?
+use asterisk↵
+
+ast #flashcard/chords
+?
+asterisk 
+
+brw #flashcard/chords
+?
+brownie 
+
+gsa #flashcard/chords
+?
+psk 
+
+gtw #flashcard/chords
+?
+setl 
+
+gea #flashcard/chords
+?
+legenda 
+
+ger #flashcard/chords
+?
+marker 
+
+tms #flashcard/chords
+?
+times 
+
+gad #flashcard/chords
+?
+HLM 
+
+wfe #flashcard/chords
+?
+ble 
+
+gat #flashcard/chords
+?
+Kaiten 
+
+ctx #flashcard/chords
+?
+context 
+
+xte #flashcard/chords
+?
+extensions 
+
+
+
+str #flashcard/chords
+?
+systemctl restart 
+
+sta #flashcard/chords
+?
+systemctl status 
+
+stg #flashcard/chords
+?
+systemctl start 
+
+stq #flashcard/chords
+?
+systemctl stop 
+
+bwx #flashcard/chords
+?
+brownie.exec 
+
+adx #flashcard/chords
+?
+admin.exec 
+
+swx #flashcard/chords
+?
+push.exec 
+
+fbc #flashcard/chords
+?
+fail2ban-client 
+
+fba #flashcard/chords
+?
+fail2ban 
+
+asv #flashcard/chords
+?
+asterisk -rvvvvvvvv↵
+
+
+
+vgf #flashcard/chords
+?
+journalctl -u  -f←←←
+
+vgs #flashcard/chords
+?
+journalctl -u  --since "1 hour ago"←←←←←←←←←←←←←←←←←←←←←
+
+vts #flashcard/chords
+?
+minutes 
+
+vrs #flashcard/chords
+?
+hours 
+
+vds #flashcard/chords
+?
+days 
+
+
+
+qsd #flashcard/chords
+?
+sudo -i↵
+
+qfe #flashcard/chords
+?
+ | grep 
+
+qwr #flashcard/chords
+?
+ > test.log 
+
+
+
+qec #flashcard/chords
+?
+echo
+
+qsr #flashcard/chords
+?
+history↵
+
+qce #flashcard/chords
+?
+clear↵
+
+qet #flashcard/chords
+?
+exit↵
+
+
+
+zsr #flashcard/chords
+?
+/var/log/asterisk/emerg 
+
+zsx #flashcard/chords
+?
+/etc/asterisk/extensions.conf 
+
+zrw #flashcard/chords
+?
+/opt/brownie/config.json 
+
+zfb #flashcard/chords
+?
+/etc/fail2ban/jail.d/asterisk.local /etc/fail2ban/jail.conf 
+
+qcd #flashcard/chords
+?
+mkdir 
+
+qrm -r 
+
+qcx #flashcard/chords
+?
+chmod 666 
+
+qrf #flashcard/chords
+?
+tail -f 
+
+qed #flashcard/chords
+?
+nano 
+
+
+
+zgd #flashcard/chords
+?
+~
+
+zgf #flashcard/chords
+?
+/home/
+
+sdf #flashcard/chords
+?
+dafed@
+
+scv #flashcard/chords
+?
+alkor@
+
+std #flashcard/chords
+?
+setlprod@
+
+sav #flashcard/chords
+?
+nns@
+
+sde #flashcard/chords
+?
+delsol@
+
+
+
+sad #flashcard/chords
+?
+ssh 
+
+
+
+cgx #flashcard/chords
+?
+- [ ] 
+
+cqt #flashcard/chords
+?
+''←
+
+cqd #flashcard/chords
+?
+""←
+
+cra #flashcard/chords
+?
+()←
+
+cqr #flashcard/chords
+?
+[]←
+
+cwr #flashcard/chords
+?
+{}←
+
+tras #flashcard/chords
+?
+typeracerplay.typeracer.com
+
+
+
+
+
+
+
+qwed #flashcard/chords
+?
+admin↹OLadmin18↵
+
+qwev #flashcard/chords
+?
+fedorov↹1EsMrGshW4↵
+
+qwer #flashcard/chords
+?
+1q2w3e4r↵
+
+qwed #flashcard/chords
+?
+2313133↵
+
+qwet #flashcard/chords
+?
+29qBj3cEg#↵
+
+qwes #flashcard/chords
+?
+eu&W87r)5_Dspy↵
+
+qweg #flashcard/chords
+?
+qwsuD81hH8LI↵
+
+qwrg #flashcard/chords
+?
+94vcTb3Vm7Xwp↵
