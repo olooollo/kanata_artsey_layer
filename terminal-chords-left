@@ -1,0 +1,89 @@
+dv	mongo 
+sdv	mongosh || mongo↵
+cdv	mongodump 
+rdv	mongorestore 
+fav	.find({})←←
+dtv	.update({}, {})←←←←←←
+
+sq	mysql↵
+	select * from where =''←←←←←←←←←←
+ze	use 
+zed	use admin↵
+zea	use asterisk↵
+ast	asterisk 
+brw	brownie 
+gsa	psk 
+gtw	setl 
+gea	legenda 
+ger	marker 
+tms	times 
+gad	HLM 
+wfe	ble 
+gat	Kaiten 
+ctx	context 
+xte	extensions 
+
+str	systemctl restart 
+sta	systemctl status 
+stg	systemctl start 
+stq	systemctl stop 
+bwx	brownie.exec 
+adx	admin.exec 
+swx	push.exec 
+fbc	fail2ban-client 
+fba	fail2ban 
+asv	asterisk -rvvvvvvvv↵
+
+vgf	journalctl -u  -f←←←
+vgs	journalctl -u  --since "1 hour ago"←←←←←←←←←←←←←←←←←←←←←
+vts	minutes 
+vrs	hours 
+vds	days 
+
+qsd	sudo -i↵
+qfe	 | grep 
+qwr	 > test.log 
+
+qec	echo
+qsr	history↵
+qce	clear↵
+qet	exit↵
+
+zsr	/var/log/asterisk/emerg 
+zsx	/etc/asterisk/extensions.conf 
+zrw	/opt/brownie/config.json 
+zfb	/etc/fail2ban/jail.d/asterisk.local /etc/fail2ban/jail.conf 
+qcd	mkdir 
+qrm -r 
+qcx	chmod 666 
+qrf	tail -f 
+qed	nano 
+
+zgd	~
+zgf	/home/
+sdf	dafed@
+scv	alkor@
+std	setlprod@
+sav	nns@
+sde	delsol@
+
+sad	ssh 
+
+cgx	- [ ] 
+cqt	''←
+cqd	""←
+cra	()←
+cqr	[]←
+cwr	{}←
+tras	typeracerplay.typeracer.com
+
+
+
+qwed	admin↹OLadmin18↵
+qwev	fedorov↹1EsMrGshW4↵
+qwer	1q2w3e4r↵
+qwed	2313133↵
+qwet	29qBj3cEg#↵
+qwes	eu&W87r)5_Dspy↵
+qweg	qwsuD81hH8LI↵
+qwrg	94vcTb3Vm7Xwp↵
